@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:@localhost:3306/pitsaria?schema=public"
+  url      = env("DATABASE_URL")
 }
 
 //Criando models
