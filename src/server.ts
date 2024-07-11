@@ -11,7 +11,7 @@ app.use(express.json())
 app.use (cors())
 app.use(router)
 
-const port=process.env.PORT || 3001
+const port=process.env.PORT || 3333
 
 app.use(
     "/files",
@@ -46,4 +46,4 @@ app.use((err:Error, req:Request, res:Response, next:NextFunction)=>{
 })
 
 //porta backend
-app.listen(3333,()=>console.log('servidor online'))
+app.listen(port,()=>console.log('servidor online'))
