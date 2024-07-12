@@ -10,7 +10,7 @@
     "start": "node dist/server.js",
     "build": "tsc",
     "dev": "ts-node-dev src/server.ts",
-    "vercel.build":"npx prisma migrate deploy"
+    "vercel.build":"npx prisma generate"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
