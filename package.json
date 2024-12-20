@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+
   "engines": {
-    "node": "20.x"
+    "node": "20"
   },
   "scripts": {
     "start": "node dist/server.js",
     "build": "tsc",
-    "dev": "ts-node-dev src/server.ts",
-    "vercel.build":"npx prisma generate"
+    "dev": "ts-node-dev src/server.ts"
   },
+
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",
